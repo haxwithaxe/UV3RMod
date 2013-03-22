@@ -1,4 +1,3 @@
-
 CC_WINDOWS_PATH="C:\\HMS800C"
 CC_INSTALL_DIR=$(HOME)/.wine/drive_c/HMS800C
 CC=wine $(CC_INSTALL_DIR)/bin/hms800-cc
@@ -22,5 +21,5 @@ flash: uv3r_firmware
 	../programmer/uv3rFlash.py -d -a uv3r_firmware.hex
 
 clean:
-	rm uv3r_firmware.hex *.o *.lst
+	-rm uv3r_firmware.hex *.o *.lst
 
